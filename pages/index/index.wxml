@@ -1,0 +1,14 @@
+<!-- 功能列表模块 -->
+<view class="feature-mod">
+  <navigator class='fea-item' url='/pages/timePages/countdown/countdown'>
+    <image src='/img/modTest.png'></image>
+    <text>倒计时</text>
+  </navigator>
+
+  <navigator class='fea-item' url='/pages/timePages/sequTiming/sequTiming'>
+    <image src='/img/modTest.png'></image>
+    <text>起计时</text>
+  </navigator>
+
+
+</view>

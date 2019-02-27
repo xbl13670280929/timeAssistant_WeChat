@@ -1,0 +1,35 @@
+{
+  "pages":[
+    
+    
+    
+    "pages/index/index",
+
+    "pages/timePages/countdown/countdown",
+    "pages/timePages/sequTiming/sequTiming",
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3ad2e4",
+    "navigationBarTitleText": "时间辅助器",
+    "navigationBarTextStyle": "#FFF",
+    "backgroundColor": "#FBFBFB"
+  }
+  
+}

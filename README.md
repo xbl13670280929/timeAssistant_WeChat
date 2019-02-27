@@ -1,2 +1,2 @@
-# timeAssistant_WeChat
-时间助手--微信小程序
+// 倒计时--countdown
+// 起计时--sequTiming

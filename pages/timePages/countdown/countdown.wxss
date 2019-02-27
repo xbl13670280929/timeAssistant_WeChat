@@ -1,0 +1,14 @@
+.form-item-btns {
+  position: relative;
+  text-align: center;
+}
+.form-item-btns .btn-mod {
+  display: inline-block;
+  width: 180rpx;
+  margin: 0 24rpx;
+}
+.form-item-btns .btn-stop-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

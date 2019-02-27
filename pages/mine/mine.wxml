@@ -1,0 +1,20 @@
+<!-- 页面列表模块 -->
+<view class='page-mod'>
+  <navigator class='page-item' url='/pages/pagesGrade/createGrade/createGrade'>
+    <text class='page-text'>创建班级</text>
+    <icon class='arr-icon'></icon>
+  </navigator>
+  <navigator class='page-item' url='/pages/pagesOthers/selfInfo/selfInfo'>
+    <text class='page-text'>个人信息</text>
+    <icon class='arr-icon'></icon>
+  </navigator>
+  <navigator class='page-item' url='/pages/pagesOthers/invite/invite'>
+    <text class='page-text'>邀请</text>
+    <icon class='arr-icon'></icon>
+  </navigator>
+  <navigator class='page-item' url='/pages/pagesOthers/introduceVideos/introduceVideos'>
+    <text class='page-text'>操作指引</text>
+    <icon class='arr-icon'></icon>
+  </navigator>
+
+</view>

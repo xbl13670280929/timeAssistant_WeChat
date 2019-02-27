@@ -1,0 +1,52 @@
+<view class='form-mod'>
+  <view class='form-item'>
+    <view class='form-l'>倒计时间</view>
+    <view class='form-r'>
+      <picker value="{{cdTimeIndex}}" range="{{cdTimeList}}" bindchange="bindCdTimeChange">
+        <view>
+          {{cdTimeList[cdTimeIndex]}}
+        </view>
+      </picker>
+    </view>
+    <icon class='arr-icon'></icon>
+  </view>
+  <view class='form-item'>
+    <view class='form-l'>倒计方式</view>
+    <view class='form-r'>
+      <picker value="{{cdTypeIndex}}" range="{{cdTypeList}}" bindchange="bindCdTypeChange">
+        <view>
+          {{cdTypeList[cdTypeIndex]}}
+        </view>
+      </picker>
+    </view>
+    <icon class='arr-icon'></icon>
+  </view>
+  <!-- 单次 -->
+  <view class='form-item-btns' wx:if='{{cdTypeIndex === "0"}}'>
+    <button class='btn-mod btn-sure' bindtap='bindCountdownSign'>{{signTimeTips}}</button>
+    <button class='btn-mod btn-sure btn-stop-item' bindtap='signCdToOver' wx:if='{{!overCdFlag}}'>停止</button>
+  </view>
+  <!-- 连续 -->
+  <view class='form-item-btns' wx:if='{{cdTypeIndex === "1"}}'>
+    <button class='btn-mod btn-sure' bindtap='bindCountdownCont'>{{contTimeTips}}</button>
+    <button class='btn-mod btn-sure btn-stop-item' bindtap='contCdToOver' wx:if='{{!overCdFlag}}'>停止</button>
+  </view>
+</view>
+
+<view class='font-theme mtb50'>{{overTimeStr}}</view>
+
+<!-- 单次 -->
+<view class='list-msg-mod' wx:if='{{cdTypeIndex === "0"}}'>
+  <view class='list-item' wx:for="{{signStopList}}" wx:for-item="data" wx:key="data" wx:for-index="$index">
+    第 <text class='color-theme'>{{$index + 1}}</text>  次:
+    <text class='color-red'>{{data}}</text>
+  </view>
+</view>
+
+<!-- 连续 -->
+<view class='list-msg-mod' wx:if='{{cdTypeIndex === "1"}}'>
+  <view class='list-item' wx:for="{{contStopList}}" wx:for-item="data" wx:key="data" wx:for-index="$index">
+    第 <text class='color-theme'>{{$index + 1}}</text>  次:
+    <text class='color-red'>{{data}}</text>
+  </view>
+</view>

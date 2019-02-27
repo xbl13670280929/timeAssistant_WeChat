@@ -1,0 +1,194 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/* 颜色群 */
+.color-theme { 
+  color: #36e0e1;
+}
+.color-red { 
+  color: #FD778F;
+}
+.color-gray {
+  color: #999;
+}
+
+/* 列表纯文字 */
+.list-msg-mod {
+  line-height: 48rpx;
+}
+.list-msg-mod .list-item {
+  padding: 0 30rpx;
+}
+
+/** 页面列表模块 **/
+.page-mod {
+  background-color: #FFF;
+}
+.page-mod .page-item {
+  position: relative;
+  display: block;
+  height: 96rpx;
+  text-align: left;
+  line-height: 96rpx;
+  padding: 0 30rpx;
+  white-space: nowrap;
+  border-bottom: 1rpx solid #EDEDED;
+  font-size: 30rpx;
+}
+.page-mod .page-img {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 33rpx 16rpx 0 0;
+  vertical-align: top;
+}
+.page-mod .arr-icon {
+  position: absolute;
+  top: 34.5rpx;
+  right: 30rpx;
+}
+.page-mod .page-icon {
+  position: absolute;
+  top: 20rpx;
+  right: 24rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/** 功能列表模块 **/
+.feature-mod {
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+.feature-mod .fea-item {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+.feature-mod .fea-item image{
+  vertical-align: top;
+  width: 80rpx;
+  height: 80rpx;
+}
+.feature-mod .fea-item text{
+  display: block;
+  font-size: 24rpx;
+  line-height: 26rpx;
+  margin-top: 16rpx;
+}
+
+/** 表单排版 **/
+.form-mod {
+  margin-top: 10rpx;
+  background-color: #FFF;
+  text-align: left;
+}
+.form-mod .form-item {
+  position: relative;
+  border-bottom: 1rpx solid #f9f9f9;
+  line-height: 96rpx;
+  margin: 0 30rpx;
+}
+.form-mod .form-item-btns {
+  position: relative;
+  border-bottom: 1rpx solid #f9f9f9;
+  height: 84rpx;
+  margin: 0 30rpx;
+}
+.form-mod .form-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.form-mod .form-l {
+  float: left;
+  min-width: 210rpx;
+  text-align: left;
+}
+.form-mod .form-r {
+  overflow: hidden;
+  color: #999;
+}
+.form-mod .arr-icon {
+  position: absolute;
+  top: 32rpx;
+  right: 30rpx;
+  pointer-events: none;
+}
+.form-mod .f-input {
+  height: 96rpx;
+  color: #343a5f;
+}
+
+/** 按钮群 **/
+.btn-mod, button.btn-mod {
+  display: block;
+  width: 100%;
+  line-height: 76rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  background-color: #FBFBFB;
+  border: 3rpx solid #c7cbda;
+  color: #c7cbda;
+  font-size: 30rpx;
+}
+.btn-mod::after {
+  border: none;
+}
+.btn-mod.btn-sure {
+  background-color: #36e0e1;
+  box-shadow: 0 10rpx 10rpx rgba(58, 218, 219, 0.6);
+  border-color: #36e0e1;
+  color: #FFF;
+}
+.btn-mod.btn-theme {
+  background-color: #FFF;
+  border: 1rpx solid #36e0e1;
+  color: #36e0e1;
+}
+
+/* 字体 */
+.font-theme{
+  font-size: 96rpx;
+  text-align: center;
+  color: #36e0e1;
+}
+
+/* 边距 */
+.mt20{
+  margin-top: 20rpx;
+}
+.mt100{
+  margin-top: 100rpx;
+}
+.mtb50{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+
+
+
+
+
+
+/* 图标-向右箭头 */
+.arr-icon {
+  display: inline-block;
+  width: 15rpx;
+  height: 27rpx;
+  vertical-align: middle;
+  background-size: 15rpx 27rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAbCAYAAACjkdXHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUNGNTk5ODc5OTQzMTFFODgzMkJCRUExNkZEMDdFODciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUNGNTk5ODg5OTQzMTFFODgzMkJCRUExNkZEMDdFODciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Q0Y1OTk4NTk5NDMxMUU4ODMyQkJFQTE2RkQwN0U4NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5Q0Y1OTk4Njk5NDMxMUU4ODMyQkJFQTE2RkQwN0U4NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiRECK8AAAFqSURBVHjalJRdK0RRFIZn707EX3JBSIMkHyncoLnQJE0kSe4khKZJ8nHP+MgYQ0jhxs/wP3x2vKvWrrfTdPaeVU9z1jo9a9r7rL1NpXKb0egDz+AnExhWf+fBHTgDTY3IXaAIDBgB5dAGIr+AI6oNgYuQBiLHIA8OqD4IrnwN3JqlwRzYp3cD4DqtgaXnWDeuRLV+cAOafbJrUAB7VOvVBi0+2TVYBDtUy2qDVp/sYglsU94DqtzAer7GMtikvBvUXAMbMAsrYIPyTnAvDWzgJK6Cdco7wGmoLLEG3nkTG5G3QBvl1ShQ3AULlD+BKZ9sdGAKVHvUw/MZecSijqyLBxW/JIlSxJIeFhfyeYbBd9qQGD1dLNaSYj3Z6LnO866C0aSYlEU8BLNUk/M8Vk/kNYt4DHL0Tm6SibTbNNJ/PwEzVL9U8dd3DbWDaaqdg3Gf6ORXXWes9/Yk+AsZO7dmWe8HeAsVJf4FGACmOEhCijiCfQAAAABJRU5ErkJggg==')
+}
